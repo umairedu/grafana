@@ -1043,7 +1043,7 @@
           ]
         },
         "timezone": "{{ .Values.grafana.defaultDashboardsTimezone }}",
-        "title": "Ambassador",
+        "title": "Ambassador Modify",
         "version": 20,
         "description": "Ambassador dashboard for Prometheus"
       },

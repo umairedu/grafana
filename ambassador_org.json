@@ -1,9 +1,57 @@
 {
+    "__inputs": [
+      {
+        "name": "DS_PROMETHEUS",
+        "label": "Prometheus",
+        "description": "",
+        "type": "datasource",
+        "pluginId": "prometheus",
+        "pluginName": "Prometheus"
+      }
+    ],
+    "__requires": [
+      {
+        "type": "panel",
+        "id": "gauge",
+        "name": "Gauge",
+        "version": ""
+      },
+      {
+        "type": "grafana",
+        "id": "grafana",
+        "name": "Grafana",
+        "version": "8.1.0"
+      },
+      {
+        "type": "panel",
+        "id": "graph",
+        "name": "Graph (old)",
+        "version": ""
+      },
+      {
+        "type": "datasource",
+        "id": "prometheus",
+        "name": "Prometheus",
+        "version": "1.0.0"
+      },
+      {
+        "type": "panel",
+        "id": "stat",
+        "name": "Stat",
+        "version": ""
+      },
+      {
+        "type": "panel",
+        "id": "table-old",
+        "name": "Table (old)",
+        "version": ""
+      }
+    ],
     "annotations": {
       "list": [
         {
           "builtIn": 1,
-          "datasource": "$datasource",
+          "datasource": "${DS_PROMETHEUS}",
           "enable": true,
           "hide": true,
           "iconColor": "rgba(0, 211, 255, 1)",
@@ -16,13 +64,13 @@
     "editable": true,
     "gnetId": 10850,
     "graphTooltip": 0,
-    "id": 24,
-    "iteration": 1640012952513,
+    "id": null,
+    "iteration": 1640012952514,
     "links": [],
     "panels": [
       {
         "cacheTimeout": null,
-        "datasource": "$datasource",
+        "datasource": null,
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -98,7 +146,7 @@
       },
       {
         "cacheTimeout": null,
-        "datasource": "$datasource",
+        "datasource": null,
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -174,7 +222,7 @@
       },
       {
         "cacheTimeout": null,
-        "datasource": "$datasource",
+        "datasource": null,
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -250,7 +298,7 @@
       },
       {
         "cacheTimeout": null,
-        "datasource": "$datasource",
+        "datasource": null,
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -326,7 +374,7 @@
       },
       {
         "cacheTimeout": null,
-        "datasource": "$datasource",
+        "datasource": null,
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -402,7 +450,7 @@
       },
       {
         "cacheTimeout": null,
-        "datasource": "$datasource",
+        "datasource": null,
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -478,7 +526,7 @@
       },
       {
         "cacheTimeout": null,
-        "datasource": "$datasource",
+        "datasource": null,
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -554,7 +602,7 @@
       },
       {
         "cacheTimeout": null,
-        "datasource": "$datasource",
+        "datasource": null,
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -630,7 +678,7 @@
       },
       {
         "cacheTimeout": null,
-        "datasource": "$datasource",
+        "datasource": null,
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -706,7 +754,7 @@
       },
       {
         "cacheTimeout": null,
-        "datasource": "$datasource",
+        "datasource": null,
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -782,7 +830,7 @@
       },
       {
         "cacheTimeout": null,
-        "datasource": "$datasource",
+        "datasource": null,
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -860,7 +908,7 @@
       },
       {
         "cacheTimeout": null,
-        "datasource": "$datasource",
+        "datasource": null,
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -935,7 +983,7 @@
       },
       {
         "cacheTimeout": null,
-        "datasource": "$datasource",
+        "datasource": null,
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -1013,7 +1061,7 @@
       },
       {
         "cacheTimeout": null,
-        "datasource": "$datasource",
+        "datasource": null,
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -1091,7 +1139,7 @@
         "bars": false,
         "dashLength": 10,
         "dashes": false,
-        "datasource": "$datasource",
+        "datasource": null,
         "fill": 1,
         "fillGradient": 0,
         "gridPos": {
@@ -1205,7 +1253,7 @@
         "bars": false,
         "dashLength": 10,
         "dashes": false,
-        "datasource": "$datasource",
+        "datasource": null,
         "fill": 1,
         "fillGradient": 0,
         "gridPos": {
@@ -1319,7 +1367,7 @@
         "bars": false,
         "dashLength": 10,
         "dashes": false,
-        "datasource": "$datasource",
+        "datasource": null,
         "fill": 1,
         "fillGradient": 0,
         "gridPos": {
@@ -1444,7 +1492,7 @@
         "bars": false,
         "dashLength": 10,
         "dashes": false,
-        "datasource": "$datasource",
+        "datasource": null,
         "fill": 1,
         "fillGradient": 0,
         "gridPos": {
@@ -1558,7 +1606,7 @@
         "bars": false,
         "dashLength": 10,
         "dashes": false,
-        "datasource": "$datasource",
+        "datasource": null,
         "fill": 1,
         "fillGradient": 0,
         "gridPos": {
@@ -1669,7 +1717,7 @@
         "bars": false,
         "dashLength": 10,
         "dashes": false,
-        "datasource": "$datasource",
+        "datasource": null,
         "fill": 1,
         "gridPos": {
           "h": 8,
@@ -1769,7 +1817,7 @@
         "bars": false,
         "dashLength": 10,
         "dashes": false,
-        "datasource": "$datasource",
+        "datasource": null,
         "decimals": 0,
         "fill": 1,
         "gridPos": {
@@ -1861,7 +1909,7 @@
         "bars": false,
         "dashLength": 10,
         "dashes": false,
-        "datasource": "$datasource",
+        "datasource": null,
         "decimals": 0,
         "fill": 1,
         "gridPos": {
@@ -1950,7 +1998,7 @@
       },
       {
         "columns": [],
-        "datasource": "$datasource",
+        "datasource": null,
         "fontSize": "100%",
         "gridPos": {
           "h": 8,
@@ -2012,7 +2060,7 @@
         "bars": false,
         "dashLength": 10,
         "dashes": false,
-        "datasource": "$datasource",
+        "datasource": null,
         "fill": 1,
         "gridPos": {
           "h": 9,
@@ -2100,7 +2148,7 @@
         "bars": false,
         "dashLength": 10,
         "dashes": false,
-        "datasource": "$datasource",
+        "datasource": null,
         "decimals": 0,
         "fill": 1,
         "gridPos": {
@@ -2189,7 +2237,7 @@
         "bars": false,
         "dashLength": 10,
         "dashes": false,
-        "datasource": "$datasource",
+        "datasource": "${DS_PROMETHEUS}",
         "fill": 1,
         "gridPos": {
           "h": 7,
@@ -2325,7 +2373,7 @@
         "bars": false,
         "dashLength": 10,
         "dashes": false,
-        "datasource": "$datasource",
+        "datasource": "${DS_PROMETHEUS}",
         "fill": 1,
         "gridPos": {
           "h": 7,
@@ -2434,7 +2482,7 @@
         "bars": false,
         "dashLength": 10,
         "dashes": false,
-        "datasource": "$datasource",
+        "datasource": "${DS_PROMETHEUS}",
         "decimals": 0,
         "fill": 1,
         "gridPos": {
